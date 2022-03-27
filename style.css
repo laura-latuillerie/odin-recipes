@@ -7,7 +7,7 @@ body {
 
 .header-banner {
   display: flex;
-  height: 50vh;
+  height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(./media/banner-img.jpg);
   background-position: center;
@@ -38,5 +38,5 @@ body {
 }
 
 .banner-button:hover {
-  background-color: bisque;
+  background-color: a;
 }
