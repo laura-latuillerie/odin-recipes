@@ -1,8 +1,42 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
 #navbar-logo {
   width: 50px;
 }
 
-.navbar-brand {
-  font-family: "Rock Salt", cursive;
-  font-size: 2em;
+.header-banner {
+  display: flex;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./media/banner-img.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-text {
+  color: white;
+  text-shadow: 1px 1px 5px rgb(53, 53, 53);
+}
+
+.banner-text h1 {
+  font-family: "Gochi Hand", cursive;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.banner-text h2 {
+  font-weight: lighter;
+}
+
+.banner-button {
+  padding: 10px 20px 10px 20px;
+  margin-top: 40px;
+}
+
+.banner-button:hover {
+  background-color: bisque;
 }
