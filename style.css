@@ -40,3 +40,7 @@ body {
 .banner-button:hover {
   background-color: a;
 }
+
+.recipes-deck {
+  padding: 10vh;
+}
