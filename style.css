@@ -1,14 +1,35 @@
 /************ GENERAL **************/
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #efeeee;
+  font-family: "Karla", sans-serif;
+  background-color: #dedede;
+  color: rgb(26, 26, 26);
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  color: rgb(26, 26, 26);
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 /************ NAVBAR **************/
 
+.navbar {
+  padding: 10px 0 10px 50px;
+  font-family: "Karla", sans-serif;
+  background-color: #c4c4c4;
+  font-weight: lighter;
+}
+
 #navbar-logo {
+  height: 50px;
   width: 50px;
+  transform: rotate(60deg);
 }
 
 .red-banner {
@@ -19,9 +40,8 @@ body {
 
 .header-banner {
   display: flex;
-  height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./media/banner-img.jpg);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./media/banner-img.jpg); */
   background-position: center;
   background-size: cover;
   justify-content: space-around;
@@ -30,34 +50,52 @@ body {
 }
 
 .banner-text {
-  color: white;
-  text-shadow: 1px 1px 5px rgb(53, 53, 53);
+  padding: 0 0 0 20vh;
+  text-align: left;
 }
 
 .banner-text h1 {
-  font-family: "Gochi Hand", cursive;
-  font-size: 4em;
+  display: inline-block;
+  border-left: palevioletred 5px solid;
+  font-family: "DM Sans", sans-serif;
+  font-size: 5em;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
 .banner-text h2 {
+  font-size: 1.4em;
   font-weight: lighter;
 }
 
-.banner-button {
-  padding: 10px 20px 10px 20px;
-  margin-top: 40px;
+.banner-text h1,
+h2,
+h3 {
+  padding-left: 20px;
 }
 
-.banner-button:hover {
-  background-color: a;
+.neuro-link {
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  padding: 1em;
+  background: #dedede;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+}
+.neuro-link:hover {
+  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+}
+
+.neuro-link a:active {
+  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
 }
 
 /************ RECIPES BLOCK **************/
 
 .recipes-block {
   text-align: center;
-  background-color: gainsboro;
   padding-bottom: 10vh;
 }
 

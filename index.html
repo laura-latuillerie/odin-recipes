@@ -12,10 +12,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Gochi+Hand&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="style.css" rel="stylesheet" />
     <title>
@@ -26,11 +23,13 @@
     
     <!-- Navigation Bar -->
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container-fluid justify-content-center">
+        
+      <div class="collapse navbar-collapse " id="navbarNav">
         <a class="navbar-brand" href="#"
         ><img
-        src="media/sushi-icon.png"
+        src="./media/dango.svg"
         alt="sushi icon of itadakimasu website"
         id="navbar-logo"
         /></a>
@@ -45,8 +44,7 @@
         >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -78,19 +76,28 @@
 
 <!-- End of Navigation Bar -->
 
+<main>
+
 <!-- Header's Banner -->
 
-<div class="container-fluid header-banner">
-  <div class="banner-text">
+<div class="row header-banner">
+  <div class="banner-text col-xs-12 col-sm-7">
     <h1>Itadakimasu</h1>
-    <h2>Browse and cook all your favorite animes' recipes</h2>
-    <button type="button" class="btn btn-danger banner-button">
-      Let's cook !
-    </button>
+    <h3>頂きます !</h3>
+    <h2>Browse and cook all your favorite animes' recipes. Just joking, those are random ass ones for this project.</h2>
+    <a href="#recipes-block" class="neuro-link">Let's cook !</a>
+  </div>
+  <div class="banner-img col-xs-12 col-sm-5">
+    <img src="./media/header-img-japanese-candy.png">
   </div>
 </div>
 
-<section class ="container-fluid recipes-block">
+
+<!-- End of Header's Banner -->
+
+<!-- Recipes Block -->
+
+<section class ="container-fluid recipes-block" id="recipes-block">
   <h2>Browse the best anime recipes !</h2>
   <div class="row row-cols-1 row-cols-md-4 g-4 recipes-deck">
     <div class="col">
@@ -149,7 +156,10 @@
   </div>
 </section>
 
-<!-- End of Header's Banner -->
+<!-- End ofRecipes Block -->
+
+
+</main>
 
 <!-- Bootstrap's Js-->
 
