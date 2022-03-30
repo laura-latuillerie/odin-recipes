@@ -1,9 +1,21 @@
+/************ GENERAL **************/
+
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #efeeee;
 }
+
+/************ NAVBAR **************/
+
 #navbar-logo {
   width: 50px;
 }
+
+.red-banner {
+  background-color: darkred;
+}
+
+/************ HEADER **************/
 
 .header-banner {
   display: flex;
@@ -41,6 +53,8 @@ body {
   background-color: a;
 }
 
+/************ RECIPES BLOCK **************/
+
 .recipes-block {
   text-align: center;
   background-color: gainsboro;
@@ -55,6 +69,8 @@ body {
   padding: 10vh 0 0 0;
 }
 
+/************ CARD DESIGN **************/
+
 .card {
   padding: 10px;
   box-shadow: 5px 5px 15px grey;
@@ -68,17 +84,35 @@ body {
 
 .card-img-top {
   position: relative;
+  border-radius: 10px;
 }
 
 .difficulty-note {
   position: absolute;
   background-color: darkred;
   color: white;
-
   box-shadow: 5px 5px 15px grey;
   border-radius: 50%;
   padding: 15px 10px;
   top: -10px;
   right: -10px;
   font-weight: bold;
+}
+
+/************* RECIPE ARTICLE **********/
+
+.recipe-article-img {
+  margin: 10vh 0 1vh;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.recipe-article h2 {
+  padding: 10vh auto 0;
+  font-size: 3rem;
+  font-family: "Gochi Hand", cursive;
+}
+
+.recipe-article h3 {
+  font-size: 1rem;
 }
