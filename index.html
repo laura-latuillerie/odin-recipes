@@ -65,7 +65,6 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="./recipes/porkkatsudon.html">Pork Katsudon</a></li>
             <li><a class="dropdown-item" href="./recipes/fishpie.html">Fish Pie</a></li>
-            <li><a class="dropdown-item" href="./recipes/almondchocolates.html">Almond Chocolates</a></li>
             <li><a class="dropdown-item" href="./recipes/curryrice.html">Curry Rice</a></li>
           </ul>
         </li>
@@ -85,7 +84,7 @@
     <h1>Itadakimasu</h1>
     <h3>頂きます !</h3>
     <h2>Browse and cook all your favorite animes' recipes. Just joking, those are random ass ones for this project.</h2>
-    <a href="#recipes-block" class="neuro-link">Let's cook !</a>
+    <a href="#recipes-block" class="neuro-link"><span>Let's cook !</span></a>
   </div>
   <div class="banner-img col-xs-12 col-sm-5">
     <img src="./media/header-img-japanese-candy.png">
@@ -99,56 +98,39 @@
 
 <section class ="container-fluid recipes-block" id="recipes-block">
   <h2>Browse the best anime recipes !</h2>
-  <div class="row row-cols-1 row-cols-md-4 g-4 recipes-deck">
+  <h3>It is easier than it looks, promise.</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-3 recipes-deck">
     <div class="col">
-      <div class="card text-center">
+      <div class="card card-neuro text-center">
         <img src="./media/recipe-01-pork-katsudon.jpg" class="card-img-top" alt="pork katsudon anime version">
         
         <div class="card-body">
           <h5 class="card-title">Pork Katsudon</h5>
-          <p class="card-text">Anime : Yuri!!! on ICE</p>
-          <p class="card-text difficulty-note">6/10</p>
-          <a href="./recipes/porkkatsudon.html" class="card-link"><button type="button" class="btn btn-outline-danger">Read
-          </button></a>
+          <p class="card-text">From<br><strong>Yuri!!! on ICE</strong></p>
+          <a href="./recipes/porkkatsudon.html" class="card-link"><span>Read</span></a>
           
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card text-center">
+      <div class="card card-neuro  text-center">
         <img src="./media/recipe-02-fish-pie.jpg" class="card-img-top" alt="fish pie anime version">
         <div class="card-body">
           <h5 class="card-title">Fish Pie</h5>
-          <p class="card-text">Anime : Kiki's Delivery Service</p>
-          <p class="card-text difficulty-note">9/10</p>
-          <a href="./recipes/fishpie.html" class="card-link"><button type="button" class="btn btn-outline-danger">Read
-          </button></a>
+          <p class="card-text">From<br><strong>Kiki's Delivery Service</strong></p>
+          <a href="./recipes/fishpie.html" class="card-link"><span>Read</span></a>
           
         </div>
       </div>
     </div>
+    
     <div class="col">
-      <div class="card text-center">
-        <img src="./media/recipe-03-almond-chocolates.jpg" class="card-img-top" alt="almond chocolates anime version">
-        <div class="card-body">
-          <h5 class="card-title">Almond chocolates</h5>
-          <p class="card-text">Anime : Kimi Ni Todoke</p>
-          <p class="card-text difficulty-note">7/10</p>
-          <a href="./recipes/almondchocolates.html" class="card-link"><button type="button" class="btn btn-outline-danger">Read
-          </button></a>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card text-center">
+      <div class="card card-neuro text-center">
         <img src="./media/recipe-04-curry.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Curry Rice</h5>
-          <p class="card-text">Anime : Mawaru Penguindrum</p>
-          <p class="card-text difficulty-note">8/10</p>
-          <a href="./recipes/curryrice.html" class="card-link"><button type="button" class="btn btn-outline-danger">Read
-          </button></a>
+          <p class="card-text">From<br><strong>Mawaru Penguindrum</strong></p>
+          <a href="./recipes/curryrice.html" class="card-link"><span>Read</span></a>
           
         </div>
       </div>
@@ -157,6 +139,17 @@
 </section>
 
 <!-- End ofRecipes Block -->
+
+<section class="container-fluid about-block text-center">
+  <h2>About the creator</h2>
+  <h3>Nobody's wanna know but I need to talk</h3>
+  <div class="bg-img-about">
+    <img src="./media/cat-chibi-eats-chipsgif.gif">
+  </div>
+  
+  <h4>Ramenita Pooch</h4>
+  <h5>Unemployed yet kind moron</h5>
+</section>
 
 
 </main>
@@ -174,11 +167,11 @@ crossorigin="anonymous"
 </body>
 
 <footer>
-  <footer class="bg-light text-center">
+  <footer class="bg-dark text-center">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container-fluid">
       <!-- Section: Social media -->
-      <section class="mb-4">
+      <section class="social-links">
         <a class="btn btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-facebook-f"></i
           ></a>
@@ -206,7 +199,7 @@ crossorigin="anonymous"
                   <!-- Section: Social media -->
                   
                   <!-- Copyright -->
-                  <div class="text-center p-3">
+                  <div class="text-center copyright">
                     <p>
                       © 2022 Copyright 
                       <a href="#"><strong>Itadakimasu</strong></a>

@@ -1,4 +1,7 @@
 /************ GENERAL **************/
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Karla", sans-serif;
@@ -11,10 +14,93 @@ main {
   margin: auto;
 }
 
+/************ LINKS **************/
+
 a {
   color: rgb(26, 26, 26);
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+a:hover:before,
+a:active {
+  color: mediumseagreen;
+}
+
+a:hover span {
+  display: none;
+}
+
+.card-link {
+  font-size: 1rem;
+}
+
+.neuro-link,
+.card-link {
+  color: palevioletred;
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  padding: 1em;
+  background: #dedede;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+}
+.neuro-link:hover,
+.card-link:hover {
+  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+}
+
+.neuro-link:active {
+  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+}
+
+.card-link:hover:before,
+.neuro-link:hover:before,
+.card-link:active:before,
+.neuro-link:active:before {
+  content: "Let's get it 🍗";
+}
+
+/************ Hn **************/
+
+.banner-text h1 {
+  display: inline-block;
+  border-left: palevioletred 5px solid;
+  font-family: "DM Sans", sans-serif;
+  font-size: 5em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.banner-text h2 {
+  font-size: 1.4em;
+  font-weight: lighter;
+}
+
+.banner-text h1,
+h2,
+h3 {
+  padding-left: 20px;
+}
+
+.recipes-block h2,
+.about-block h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10vh 0 0 0;
+}
+
+.recipes-block h3,
+.about-block h3 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.about-block h4 {
+  text-transform: uppercase;
 }
 
 /************ NAVBAR **************/
@@ -41,7 +127,7 @@ a {
 .header-banner {
   display: flex;
   /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./media/banner-img.jpg); */
+  url(./media/banner-img.jpg); */
   background-position: center;
   background-size: cover;
   justify-content: space-around;
@@ -54,42 +140,9 @@ a {
   text-align: left;
 }
 
-.banner-text h1 {
-  display: inline-block;
-  border-left: palevioletred 5px solid;
-  font-family: "DM Sans", sans-serif;
-  font-size: 5em;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-.banner-text h2 {
-  font-size: 1.4em;
-  font-weight: lighter;
-}
-
-.banner-text h1,
-h2,
-h3 {
-  padding-left: 20px;
-}
-
-.neuro-link {
-  display: inline-block;
-  margin: 20px 0 0 20px;
-  padding: 1em;
-  background: #dedede;
-  border-radius: 10px;
-  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
-}
-.neuro-link:hover {
-  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
-}
-
-.neuro-link a:active {
-  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+.banner-img {
+  padding: 5vh 0;
+  animation: bounce 0.5s ease infinite alternate;
 }
 
 /************ RECIPES BLOCK **************/
@@ -100,43 +153,36 @@ h3 {
 }
 
 .recipes-deck {
-  padding: 10vh;
-}
-
-.recipes-block h2 {
-  padding: 10vh 0 0 0;
+  padding: 5vh;
 }
 
 /************ CARD DESIGN **************/
 
-.card {
-  padding: 10px;
-  box-shadow: 5px 5px 15px grey;
+.card-neuro {
+  margin: 0 20px;
+  padding: 20px;
+  background: #dedede;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+  transition: 0.5;
 }
 
+.card-neuro:hover {
+  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+  box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+}
 .card-title {
-  font-family: "Gochi Hand", cursive;
-  font-size: 1.6em;
+  font-family: "DM sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
   text-transform: uppercase;
 }
 
 .card-img-top {
   position: relative;
-  border-radius: 10px;
+  border-radius: 20px;
 }
-
-.difficulty-note {
-  position: absolute;
-  background-color: darkred;
-  color: white;
-  box-shadow: 5px 5px 15px grey;
-  border-radius: 50%;
-  padding: 15px 10px;
-  top: -10px;
-  right: -10px;
-  font-weight: bold;
-}
-
 /************* RECIPE ARTICLE **********/
 
 .recipe-article-img {
@@ -153,4 +199,61 @@ h3 {
 
 .recipe-article h3 {
   font-size: 1rem;
+}
+
+/************* ABOUT **********/
+
+.about-block {
+  padding-bottom: 10vh;
+}
+
+.bg-img-about {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 50px auto 20px auto;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+.about-block img {
+  position: absolute;
+  width: 300px;
+  top: 0px;
+  left: -20px;
+}
+
+/************* FOOTER **********/
+
+footer,
+footer a,
+.fab {
+  color: white;
+}
+
+footer a:hover {
+  color: palevioletred;
+}
+
+.fab {
+  font-size: 2rem;
+}
+
+.fab:hover {
+  color: palevioletred;
+  animation: bounce 0.35s ease infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+footer {
+  padding: 20px 0 20px 0;
+  margin-bottom: 0;
 }
