@@ -1,4 +1,5 @@
 /************ GENERAL **************/
+
 * {
   box-sizing: border-box;
 }
@@ -11,16 +12,8 @@ body {
 }
 
 main {
-  margin: auto;
-}
-
-main {
   width: 90%;
   margin: auto;
-}
-
-.main-recipes {
-  width: 50%;
 }
 
 /************ LINKS **************/
@@ -89,9 +82,8 @@ h2 {
 }
 
 .banner-text h1 {
-  display: inline-block;
-  border-left: palevioletred 5px solid;
-  font-size: 10vh;
+  padding: 10vh 0 0 0;
+  font-size: 6vh;
   text-transform: uppercase;
 }
 
@@ -100,16 +92,9 @@ h2 {
   font-weight: lighter;
 }
 
-.banner-text h1,
-h2,
-h3 {
-  padding-left: 20px;
-}
-
 .recipes-block h2,
 .about-block h2 {
   font-size: 3rem;
-  font-weight: bold;
   padding: 10vh 0 0 0;
 }
 
@@ -143,8 +128,6 @@ ul {
 /************ NAVBAR **************/
 
 .navbar {
-  padding: 10px 0 10px 50px;
-  font-family: "Karla", sans-serif;
   background-color: #c4c4c4;
   font-weight: lighter;
 }
@@ -155,40 +138,18 @@ ul {
   transform: rotate(60deg);
 }
 
-.red-banner {
-  background-color: darkred;
-}
-
 /************ HEADER **************/
 
-.header-banner {
-  display: flex;
-  background-position: center;
-  background-size: cover;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-}
-
-.banner-text {
-  padding: 0 0 0 20vh;
-  text-align: left;
-}
-
 .banner-img {
-  padding: 5vh 0;
+  width: 80%;
+  margin: auto;
   animation: bounce 0.5s ease infinite alternate;
 }
 
 /************ RECIPES BLOCK **************/
 
-.recipes-block {
-  text-align: center;
-  padding-bottom: 5vh;
-}
-
 .recipes-deck {
-  padding: 5vh;
+  padding-top: 5vh;
 }
 
 /************ CARD DESIGN **************/
@@ -261,10 +222,6 @@ footer a:hover {
   color: palevioletred;
 }
 
-.fab {
-  font-size: 2rem;
-}
-
 .fab:hover {
   color: palevioletred;
   animation: bounce 0.35s ease infinite alternate;
@@ -282,4 +239,59 @@ footer a:hover {
 footer {
   padding: 20px 0 20px 0;
   margin: 5vh 0 0 0;
+}
+
+/************* RESPONSIVE **********/
+
+@media (min-width: 768px) {
+  .header-banner {
+    align-items: center;
+  }
+
+  .banner-text h1,
+  h2,
+  h3 {
+    padding-left: 20px;
+  }
+
+  .banner-text h1 {
+    padding: 0 0 0 20px;
+    display: inline-block;
+    border-left: palevioletred 5px solid;
+    font-size: 10vh;
+  }
+
+  .banner-text {
+    padding: 0 0 0 20vh;
+    text-align: left;
+  }
+
+  .banner-img {
+    width: unset;
+    padding: 5vh 0vh 2vh 2vh;
+  }
+
+  .navbar {
+    padding: 10px 0 10px 50px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .main-recipes {
+    width: 50%;
+  }
+
+  .recipes-block {
+    padding-bottom: 5vh;
+  }
+
+  .recipes-deck {
+    padding: 5vh;
+  }
+
+  .fab {
+    font-size: 2rem;
+  }
 }
