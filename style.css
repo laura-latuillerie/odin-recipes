@@ -23,6 +23,7 @@ a {
   color: rgb(26, 26, 26);
   font-size: 1.2rem;
   text-decoration: none;
+  color: palevioletred;
 }
 
 a:hover:before,
@@ -34,13 +35,12 @@ a:hover span {
   display: none;
 }
 
-.card-link {
-  font-size: 1rem;
+.card-link,
+.neuro-link {
+  font-weight: bold;
 }
 
-.neuro-link,
-.card-link {
-  color: palevioletred;
+.neuro-link {
   display: inline-block;
   margin: 20px 0 0 20px;
   padding: 1em;
@@ -48,8 +48,7 @@ a:hover span {
   border-radius: 10px;
   box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
 }
-.neuro-link:hover,
-.card-link:hover {
+.neuro-link:hover {
   background: linear-gradient(145deg, #c8c8c8, #eeeeee);
   box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
 }
